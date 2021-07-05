@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-image: url(./images/bg-intro-mobile.png);
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff7a7a;
+  z-index: -1;
+}
+
+.sign {
+  padding: 9.5rem 2.5rem 6rem;
+}
+.sign-content {
+  text-align: center;
+}
+.sign-content .title {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 2.5rem;
+}
+.sign-content .desc {
+  line-height: 1.6;
+  padding-bottom: 7rem;
+}
+.sign-form .try {
+  background-color: #6055a5;
+  padding: 2.5rem 6rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  line-height: 1.6;
+  border-radius: 1rem;
+  box-shadow: 0px 7px 0px 0px rgba(62, 60, 73, 0.171);
+}
+.sign-form .try span {
+  font-weight: 600;
+}
+.sign-form form {
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 7px 0px 0px rgba(62, 60, 73, 0.171);
+}
+.sign-form form input {
+  display: block;
+  width: 100%;
+  border: 1px solid #b9b6d3;
+  border-radius: 5px;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.sign-form form input::placeholder {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.sign-form form input.active {
+  border: 2px solid #ff7a7a;
+}
+.sign-form form input[type=submit] {
+  background-color: #38cc8c;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px 0px #3b944a;
+}
+.sign-form form .checked,
+.sign-form form .submit {
+  margin-bottom: 1.5rem;
+}
+.sign-form form .checked {
+  position: relative;
+}
+.sign-form form .checked .icon {
+  display: none;
+}
+.sign-form form .checked .icon--active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+}
+.sign-form form .checked .message--active {
+  color: #ff7a7a;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: right;
+  padding-top: 5px;
+}
+.sign-form form p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #b9b6d3;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.sign-form form p span {
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+
+  .sign {
+    padding: 0 3rem;
+    max-width: 1111px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .sign-content, .sign-form {
+    width: 50%;
+  }
+  .sign-content {
+    text-align: left;
+    padding-right: 1rem;
+  }
+  .sign-content .title {
+    font-size: 4.5rem;
+  }
+  .sign-content .desc {
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sign {
+    padding: 0;
+  }
+  .sign-content {
+    padding-right: 6rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

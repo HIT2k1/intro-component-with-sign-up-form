@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <section class="sign">
+            <div class="sign-content">
+                <h3 class="title">Learn to code by watching others</h3>
+                <p class="desc">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but 
+                    understanding how developers think is invaluable.
+                </p>
+            </div>
+            <div class="sign-form">
+                <div class="try">
+                    <span>Try it free 7 days</span> then $20/mo. thereafter
+                </div>
+                <form action="" id="form">
+                    <div class="fill checked">
+                        <input type="text" placeholder="First Name">
+                        <img src="./images/icon-error.svg" alt="" class="icon">
+                        <div class="message"></div>
+                    </div>
+                    <div class="fill checked">
+                        <input type="text" placeholder="Last Name">
+                        <img src="./images/icon-error.svg" alt="" class="icon">
+                        <div class="message"></div>
+                    </div>
+                    <div class="email checked">
+                        <input type="text" placeholder="Email Address">
+                        <img src="./images/icon-error.svg" alt="" class="icon">
+                        <div class="message"></div>
+                    </div>
+                    <div class="fill checked">
+                        <input type="password" placeholder="Password">
+                        <img src="./images/icon-error.svg" alt="" class="icon">
+                        <div class="message"></div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="CLAIM YOUR FREE TRIAL">
+                    </div>
+                    <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
